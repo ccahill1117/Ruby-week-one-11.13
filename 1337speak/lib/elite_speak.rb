@@ -25,8 +25,8 @@ def elite_translate(input)
     new_sentence.push((word[0]) + newWord)
     # new_sentence.push((word[0]) + (word[1..-1]))
   end
-  new_sentence.join(' ')
-  return new_sentence
+  join_sentence = new_sentence.join(' ')
+  join_sentence
 end
 
 # split_sentence.each() do |word|
