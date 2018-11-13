@@ -8,11 +8,23 @@
 # puts get_title
 # end
 
-def title_case
-  split_sentence = gets.split()
+# # our work-around
+def title_case(sentence)
+  split_sentence = sentence.split()
   split_sentence.each() do |word|
     word.capitalize!
   end
-  join_sentence = split_sentence.join(" ")
+  split_sentence.join(" ")
   puts join_sentence
 end
+
+# curriculum
+
+# def title_case
+#   split_sentence = self.split()
+#   split_sentence.each() do |word|
+#     word.capitalize()
+#   end
+#   split_sentence.join(" ")
+#   puts join_sentence
+# end
