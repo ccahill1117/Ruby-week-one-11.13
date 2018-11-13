@@ -1,10 +1,12 @@
 
-def attack(qposx,qposy,pposx,pposy)
+def attack(queen,piece)
   vertical_array = []
   horizontal_array = []
   diagonal_array = []
-  queen_position = [qposx,qposy]
-  piece_position = [pposx,pposy]
+  qposx = queen[0]
+  qposy = queen[1]
+  pposx = piece[0]
+  pposy = piece[1]
   # return queen_position , piece_position
     vertical_number = -8
     17.times() do
@@ -26,11 +28,11 @@ def attack(qposx,qposy,pposx,pposy)
 
     # return vertical_array.include?(piece_position), horizontal_array.include?(piece_position), diagonal_array.include?(piece_position)
 
-    if vertical_array.include?(piece_position) === true
+    if vertical_array.include?(piece) === true
       return ("hit - vertical")
-    elsif horizontal_array.include?(piece_position) === true
+    elsif horizontal_array.include?(piece) === true
       return ("hit - horizontal")
-    elsif diagonal_array.include?(piece_position) === true
+    elsif diagonal_array.include?(piece) === true
       return ("hit - diagonal")
     else
       return ("out of range")
