@@ -20,11 +20,21 @@ def attack(qposx,qposy,pposx,pposy)
     diagy_number = -8
     17.times() do
       diagonal_array.push([(qposx+diagx_number),(qposy+diagy_number)])
-      diagx_number = diagx_number +1
+      diagx_number = diagx_number + 1
       diagy_number = diagy_number + 1
     end
 
-    return vertical_array.include?(piece_position), horizontal_array.include?(piece_position), diagonal_array.include?(piece_position)
+    # return vertical_array.include?(piece_position), horizontal_array.include?(piece_position), diagonal_array.include?(piece_position)
+
+    if vertical_array.include?(piece_position) === true
+      return ("hit - vertical")
+    elsif horizontal_array.include?(piece_position) === true
+      return ("hit - horizontal")
+    elsif diagonal_array.include?(piece_position) === true
+      return ("hit - diagonal")
+    else
+      return ("out of range")
+    end
 
      # return vertical_array, horizontal_array, diagonal_array
 
