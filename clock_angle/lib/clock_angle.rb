@@ -13,8 +13,5 @@ def clock_angle(time)
 
   first_difference = (hour_degrees_one - minute_degrees_one).abs
 
-  # second_difference = (hour_degrees_two - minute_degrees_two).abs
-
-
   return first_difference
 end

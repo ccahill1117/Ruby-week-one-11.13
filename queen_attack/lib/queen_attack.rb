@@ -26,8 +26,6 @@ def attack(queen,piece)
       diagy_number = diagy_number + 1
     end
 
-    # return vertical_array.include?(piece_position), horizontal_array.include?(piece_position), diagonal_array.include?(piece_position)
-
     if vertical_array.include?(piece) === true
       return ("hit - vertical")
     elsif horizontal_array.include?(piece) === true
@@ -37,8 +35,4 @@ def attack(queen,piece)
     else
       return ("out of range")
     end
-
-     # return vertical_array, horizontal_array, diagonal_array
-
-
 end
